@@ -1,9 +1,9 @@
 // --- modified: use var so other scripts can access `container` as a global ---
 var container = document.querySelector('#youare-container');
 
-var audio = document.querySelector('#youare-audio');
-var ovlap = document.querySelector('#youare-overlap');
-var micon = document.querySelector('#youare-micon');
+let audio = document.querySelector('#youare-audio');
+let ovlap = document.querySelector('#youare-overlap');
+let micon = document.querySelector('#youare-micon');
 
 // Overlap global. Can probably be done better.
 // https://github.com/Endermanch/youareanidiot.cc 🤪
@@ -54,11 +54,6 @@ function audioSwitch() {
 	else {
 		audioStop();
 	}
-}
-
-function audioOverlap() {
-	/* original overlap logic — leave as-is or implement if missing */
-	/* ... */
 }
 
 /* event wiring */
